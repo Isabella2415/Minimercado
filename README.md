@@ -10,8 +10,7 @@ Responsividade para melhor experiência em dispositivos móveis.
 
 - Como acessar
 
-O site está hospedado via GitHub Pages e pode ser acessado em:
-https://seu-usuario.github.io/minimercado-site/
+O site está hospedado via GitHub Pages.
 
 - Estrutura do Projeto
 
