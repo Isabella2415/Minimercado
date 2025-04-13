@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,32 +28,21 @@
 
     form {
       background-color: #ffffff;
-      padding: 1.5rem;
+      padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      color: #007bff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     }
 
     .form-group label {
+      color: #007bff;
       font-weight: bold;
-      color: #343a40;
     }
 
-    .btn-primary {
-      background-color: #007bff;
-      border-color: #007bff;
-    }
-
-    .btn-success {
-      background-color: #28a745;
-      border-color: #28a745;
+    h2 {
+      color: #28a745;
     }
   </style>
 </head>
-
 <body>
   <header class="text-center">
     <h1>Minimercado XYZ</h1>
@@ -64,7 +52,6 @@
     </nav>
   </header>
 
-  <!-- Carrossel com imagens locais -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -73,13 +60,13 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="t1.jpg" alt="Imagem 1">
+        <img src="t1.jpg" alt="Imagem 1 - Ofertas Especiais">
       </div>
       <div class="carousel-item">
-        <img src="t2.jpeg" alt="Imagem 2">
+        <img src="t2.jpeg" alt="Imagem 2 - Produtos Frescos">
       </div>
       <div class="carousel-item">
-        <img src="t3.jpg" alt="Imagem 3">
+        <img src="t3.jpg" alt="Imagem 3 - Entrega Rápida">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,7 +80,7 @@
   </div>
 
   <main class="container">
-    <section id="cadastro" class="mt-5">
+    <section id="cadastro">
       <h2>Cadastro de Cliente</h2>
       <form onsubmit="return validarCadastro()">
         <div class="form-group">
@@ -140,7 +127,7 @@
     </section>
   </main>
 
-  <footer class="text-center mt-5">
+  <footer class="text-center">
     <p>Minimercado XYZ - Todos os direitos reservados</p>
     <p id="dataHora"></p>
   </footer>
@@ -148,7 +135,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Atualiza data e hora em tempo real
     function atualizarDataHora() {
       const agora = new Date();
       const dataHoraFormatada = agora.toLocaleString('pt-BR');
@@ -157,7 +143,6 @@
     setInterval(atualizarDataHora, 1000);
     atualizarDataHora();
 
-    // Validação do formulário de cadastro
     function validarCadastro() {
       const cpf = document.getElementById('cpf').value;
       const telefone = document.getElementById('telefone').value;
@@ -186,12 +171,10 @@
       return true;
     }
 
-    // Validação do formulário de agendamento
     function validarAgendamento() {
       alert('Agendamento realizado com sucesso!');
       return true;
     }
   </script>
 </body>
-
 </html>
